@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero-content h1 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      color: #f8fafc;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      color: #94a3b8;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .buttons {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 0.9rem 1.5rem;
+      border-radius: 12px;
+      font-weight: 600;
+      transition: 0.25s ease;
+    }
+
+    .primary {
+      background: #3b82f6;
+      color: white;
+    }
+
+    .primary:hover {
+      background: #2563eb;
+    }
+
+    .secondary {
+      border: 1px solid #334155;
+      background: #111827;
+    }
+
+    .secondary:hover {
+      background: #1e293b;
+    }
+
+    section {
+      padding: 5rem 0;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #f8fafc;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: #111827;
+      border: 1px solid #1e293b;
+      border-radius: 20px;
+      padding: 1.5rem;
+      transition: transform 0.25s ease, border 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #3b82f6;
+    }
+
+    .card h3 {
+      margin-bottom: 0.8rem;
+      color: #f8fafc;
+    }
+
+    .card p {
+      color: #94a3b8;
+      font-size: 0.95rem;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .skill {
+      background: #1e293b;
+      padding: 0.8rem 1rem;
+      border-radius: 999px;
+      border: 1px solid #334155;
+      font-size: 0.95rem;
+    }
+
+    .timeline {
+      border-left: 2px solid #334155;
+      padding-left: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .timeline-item h3 {
+      color: #f8fafc;
+      margin-bottom: 0.4rem;
+    }
+
+    .timeline-item span {
+      color: #60a5fa;
+      font-size: 0.9rem;
+    }
+
+    .timeline-item p {
+      color: #94a3b8;
+      margin-top: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1rem;
+      border-top: 1px solid #1e293b;
+      color: #64748b;
+    }
+
+    @media (max-width: 768px) {
+      .hero-content h1 {
+        font-size: 2.7rem;
+      }
+
+      .hero-content p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Nguyen Vu The Khoi</h1>
+      <p>
+        AI Engineer • Full Stack Developer • RAG & LLM Enthusiast
+        <br /><br />
+        I build AI-powered applications, modern web platforms, and scalable backend systems.
+      </p>
+
+      <div class="buttons">
+        <a href="https://github.com/your-github" target="_blank" class="btn primary">GitHub</a>
+        <a href="mailto:your-email@gmail.com" class="btn secondary">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="card-grid">
+
+        <div class="card">
+          <h3>RAG Assistant System</h3>
+          <p>
+            Built a Retrieval-Augmented Generation system with chunking, reranking, metadata filtering, and LLM orchestration.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>F1 Data Platform</h3>
+          <p>
+            Created a Formula 1 analytics platform using Next.js, Prisma, PostgreSQL, and OpenF1 APIs.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Medical Image GAN</h3>
+          <p>
+            Research project using Self-Attention GANs for lung cancer medical image generation.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+
+      <div class="skills">
+        <div class="skill">Python</div>
+        <div class="skill">FastAPI</div>
+        <div class="skill">React</div>
+        <div class="skill">Next.js</div>
+        <div class="skill">Prisma</div>
+        <div class="skill">PostgreSQL</div>
+        <div class="skill">LLM</div>
+        <div class="skill">RAG</div>
+        <div class="skill">PyTorch</div>
+        <div class="skill">Docker</div>
+        <div class="skill">Git</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">Experience & Education</h2>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <h3>AI Engineer Student</h3>
+          <span>2024 — Present</span>
+          <p>
+            Focused on AI systems, Retrieval-Augmented Generation, deep learning, and full stack development.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <h3>Personal AI Projects</h3>
+          <span>2024 — Present</span>
+          <p>
+            Developing modern AI applications involving vector databases, embeddings, reranking pipelines, and chatbot systems.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+
+      <div class="card">
+        <h3>Let's Connect</h3>
+        <p>Email: your-email@gmail.com</p>
+        <p>GitHub: github.com/your-github</p>
+        <p>LinkedIn: linkedin.com/in/your-profile</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Nguyen Vu The Khoi. Built with HTML & CSS.</p>
+  </footer>
+
+</body>
+</html>
